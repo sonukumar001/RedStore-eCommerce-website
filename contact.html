@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - RedStore | Ecommerce Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html"><u>Contact</u></a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+       </div>
+
+    <!--------------Contact us details--------------->
+    <div class="accout-page">
+        <div class="container">
+    
+    <center><h1><u>Contact Us</u></h1></center><br><br>
+    <div class="container_1">
+        <form>
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" placeholder="email" >
+      
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+        <br>
+    </div>
+    </div>
+    </div>
+
+
+
+
+        </center>
+
+    <!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                
+                <div class="app-logo">
+                   
+                    <a href="https://play.google.com/store"><img src="images/play-store.png" ></a>
+                    <a href="https://www.apple.com/in/app-store/"><img src="images/app-store.png"></a>
+                </div>
+            </div>
+            <div class="footer-col2">
+               <a href="index.html"><img src="images/logo-white.png"></a>
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="https://news.nike.com/">News</a></li>
+                    <li><a href="https://jobs.nike.com/">Careers</a></li>
+                    <li><a href="https://www.nike.com/in/help/a/returns-policy-gs">Return Policy</a></li>
+                    <li><a href="https://www.google.com/maps/place/Red+Store/@26.8373699,80.0069632,7.12z/data=!4m8!1m2!2m1!1sredstore!3m4!1s0x0:0x5c5a4528ea8b8cce!8m2!3d28.5953743!4d77.051239">Store Finder</a></li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://twitter.com/login?lang=en">Twitter</a><li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><a href="index.html">Copyright 2020 - RedStore</a></p>
+    </div>
+    
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+</script>
+
+</body>
+</html> 
